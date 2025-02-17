@@ -1,0 +1,146 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: #b4a394;
+    text-align: center;
+}
+#container
+{
+height: 70vh;
+
+    justify-items: center;
+    align-items: center;
+    gap: 1.5vmin;
+
+}
+#ngm
+{
+    padding: 1rem;
+    font-size: 1.25rem;
+    background-color: rgb(12, 137, 85);
+    border-radius: 0.5rem;
+    border: none;
+}
+.game
+{
+    height: 60vh;
+    width: 60vh;
+    display: flex;
+    flex-wrap:wrap ;
+    justify-items: center;
+    align-items: center;
+    gap: 1.5vmin;
+    flex-grow: initial;
+    
+    /* border: 2px solid #34252F; */
+}
+.box
+{
+  height: 18vh;
+  width: 18vh;
+  border-radius: 1rem;
+  border: none;
+  box-shadow: 0 0 1rem rgba(0,0,0,0.3);
+  font-size: 8vmin;
+  color:#b0413e;
+  background-color: rgb(236, 229, 167);
+}
+#reset
+{
+    padding: 1rem;
+    font-size: 1.25rem;
+    background-color: rgb(12, 137, 85);
+    border-radius: 0.5rem;
+    margin-top: 13px;
+    border: none;
+}
+#msg
+{
+    color: blue;
+    font-size: 5vmin;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 15px;
+}
+.msg-container
+{
+    height:10;
+    margin-bottom: 20px;
+
+}
+.hide{
+    display: none;
+}
+h1
+{
+    font-size: 70px;
+    margin-bottom: 10px;
+}
+#team {
+    display: flex;
+    justify-content: space-between; /* Space between the items */
+    align-items: center; /* Center items vertically */
+    height: fit-content;
+    flex-wrap: wrap;
+}
+
+#teamO {
+    position: relative; /* Position relative to enable pseudo-elements */
+    text-align: center; /* Center text for symmetry */
+    background-color: #320D6D;
+    font-size: 1.25rem;
+    padding: 10px 40px; /* Adjust padding for arrow space */
+    color: white;
+}
+
+#teamO::before,
+#teamO::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent;
+}
+
+#teamO::before {
+    left: -20px; /* Position arrow outside the left */
+    border-right-color: #320D6D; /* Arrow pointing left */
+}
+
+#teamO::after {
+    right: -20px; /* Position arrow outside the right */
+    border-left-color: #320D6D; /* Arrow pointing right */
+}
+
+#teamX {
+    position: relative; /* Position relative to enable pseudo-elements */
+    text-align: center; /* Center text for symmetry */
+    background-color: #b0413e;
+    font-size: 1.25rem;
+    padding: 10px 40px; /* Adjust padding for arrow space */
+    color: white;
+}
+
+#teamX::before,
+#teamX::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent;
+}
+
+#teamX::before {
+    left: -20px; /* Position arrow outside the left */
+    border-right-color: #b0413e; /* Arrow pointing left */
+}
+
+#teamX::after {
+    right: -20px; /* Position arrow outside the right */
+    border-left-color: #b0413e; /* Arrow pointing right */
+}

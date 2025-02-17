@@ -1,0 +1,19 @@
+h1 {
+    color: rgb(4, 0, 255);
+    font-family: 'Times New Roman', Times, serif;
+    background-color: beige;
+}
+p{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 300;
+}
+div{
+    background-color: blueviolet;
+    font-weight: bolder;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+    animation: forwards;
+}
+button{
+    color: rgb(7, 7, 7);
+    background-color: chartreuse;
+}
